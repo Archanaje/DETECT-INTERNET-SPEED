@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NetPulse Analyzer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>⚡ NetPulse Analyzer</h1>
+        <button id="themeBtn">🌙</button>
+    </div>
+
+    <div class="card">
+        <h2 id="speed">0 Mbps</h2>
+        <p id="quality">Waiting...</p>
+    </div>
+
+    <button id="startBtn">Start Speed Test</button>
+
+    <div class="info-grid">
+
+        <div class="info-card">
+            <h3>📡 Ping</h3>
+            <p id="ping">-- ms</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🌐 Browser</h3>
+            <p id="browser">Loading...</p>
+        </div>
+
+        <div class="info-card">
+            <h3>📶 Status</h3>
+            <p id="status">Online</p>
+        </div>
+
+    </div>
+
+    <div class="chart-card">
+        <h3>Speed History</h3>
+        <canvas id="speedChart"></canvas>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
